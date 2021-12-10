@@ -68,8 +68,6 @@ namespace Microsoft.Maui.Handlers
 				_cancelButtonTextColorDefaultHighlighted = cancelButton.TitleColor(UIControlState.Highlighted);
 				_cancelButtonTextColorDefaultDisabled = cancelButton.TitleColor(UIControlState.Disabled);
 			}
-
-
 		}
 
 		public static void MapText(SearchBarHandler handler, ISearchBar searchBar)
@@ -160,7 +158,7 @@ namespace Microsoft.Maui.Handlers
 			NativeView?.ResignFirstResponder();
 		}
 
-		void OnTextChanged(object sender, UISearchBarTextChangedEventArgs a)
+		void OnTextChanged(object? sender, UISearchBarTextChangedEventArgs a)
 		{
 			if (VirtualView != null)
 				VirtualView.UpdateText(a.SearchText);
