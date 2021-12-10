@@ -63,8 +63,8 @@ namespace Microsoft.Maui.Essentials
 					{
 						try
 						{
-							var uiMode = UIViewSettings.GetForCurrentView().UserInteractionMode;
-							currentIdiom = uiMode == UserInteractionMode.Mouse ? DeviceIdiom.Desktop : DeviceIdiom.Tablet;
+							//var uiMode = UIViewSettings.GetForCurrentView().UserInteractionMode;
+							currentIdiom = DeviceIdiom.Desktop;
 						}
 						catch (Exception ex)
 						{
